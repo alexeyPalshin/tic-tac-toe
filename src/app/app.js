@@ -6,9 +6,9 @@ var app = angular.module('ticTacToe', []);
 var req = require.context('./components', true, /.*\.js$/);
 req.keys().forEach(req);
 //
-// // require all .js files in services folder
-// var req = require.context('./services', true, /.*\.js$/);
-// req.keys().forEach(req);
+// require all .js files in services folder
+var req = require.context('./services', true, /.*\.js$/);
+req.keys().forEach(req);
 //
 // app.config(['$stateProvider', '$urlRouterProvider', '$urlServiceProvider', '$compileProvider', function ($stateProvider, $urlRouterProvider, $urlServiceProvider, $compileProvider) {
 //     'ngInject';
